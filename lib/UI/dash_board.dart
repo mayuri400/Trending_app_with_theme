@@ -18,6 +18,7 @@ class _DashBoardState extends State<DashBoard> {
     HomeScreen(),
     Wallet(),
     Container(),
+    Container(),
   ];
 
   void _onItemTapped(int index) {
@@ -35,22 +36,27 @@ class _DashBoardState extends State<DashBoard> {
             dotColor: Colors.blue,
             onTap: (value) =>_onItemTapped(value),
             selectedColor: Colors.blue,
+            iconSize: 40,
             unselectedColor: Colors.grey.shade500,
             boxShadow: BoxShadow( color: Colors.grey.shade200,
               spreadRadius: context.isDarkMode?0.1:0.5),
             backgroundColor: context.isDarkMode?Colors.black:Colors.white,
             items: [
               BottomNavItem(
-                  emptySvg: "assets/ic_empty_home.svg",
-                  fillSvg: "assets/ic_fill_home.svg",
+                  emptySvg: "assets/home.svg",
+                  fillSvg: "assets/home_fill.svg",
                   label: ""),
               BottomNavItem(
-                  emptySvg: "assets/ic_empty_home.svg",
-                  fillSvg: "assets/ic_fill_home.svg",
+                  emptySvg: "assets/wallet.svg",
+                  fillSvg: "assets/wallet_fill.svg",
                   label: ""),
               BottomNavItem(
-                  emptySvg: "assets/ic_empty_home.svg",
-                  fillSvg: "assets/ic_fill_home.svg",
+                  emptySvg: "assets/svg1.svg",
+                  fillSvg: "assets/svg1.svg",
+                  label: ""),
+              BottomNavItem(
+                  emptySvg: "assets/svg2.svg",
+                  fillSvg: "assets/svg2.svg",
                   label: ""),
             ]),
       ),

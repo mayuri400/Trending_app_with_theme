@@ -22,7 +22,7 @@ class _WalletState extends State<Wallet> {
             textAlign: TextAlign.start,
             style: Theme.of(context).textTheme.bodyMedium
           ),
-          SizedBox(height: 10,),
+          const SizedBox(height: 10,),
           Container(
             decoration: BoxDecoration(
                 color: Colors.blue,
@@ -53,7 +53,7 @@ class _WalletState extends State<Wallet> {
                       ),
                     ),
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       RoundedContainerWithLeading(text: 'Transfer',color: Colors.black),
